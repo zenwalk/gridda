@@ -397,9 +397,6 @@ namespace GRIDDA
 
             // Time steps
             outFile.Write(String.Format("{0,-21}", getRows()) + "!Time steps\n");
-            
-            // Measurement Units
-            outFile.Write(String.Format("{0,-21}", "\"" + mMeasurementUnits + "\"") + "!Measurement Units\n");
 
             // No. stations
             outFile.Write(String.Format("{0,-21}", getColumns()) + "!No. of sites\n");
