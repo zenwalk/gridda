@@ -23,7 +23,7 @@ GRIDDA.exe -ALL -SHAPEFILE=orara_river.shp -OUTDIR=AllTest\ -GRID=112.925,-43.57
 === DELINEATE ===
 || -SHAPEFILE=`<path>` || Path to shapefile ||
 || -OUTDIR=`<path>` || Directory to place output ||
-|| -GRID=a,b,c,d,e,f || Where a and b are longitude and latitude, c and d are cell width and height, e and f are number of columns and rows. ||
+|| -GRID=a,b,c,d,e,f || Where a and b are longitude and latitude of the lower left corner of the grid, c and d are cell width and height, e and f are number of columns and rows. ||
 
 _*Example*_
 GRIDDA.exe -DELINEATE -SHAPEFILE=orara_river.shp -OUTDIR=DelineateTest\ -GRID=112.925,-43.575,0.05,0.05,813,670
@@ -34,7 +34,7 @@ GRIDDA.exe -DELINEATE -SHAPEFILE=orara_river.shp -OUTDIR=DelineateTest\ -GRID=11
 || -DATADIR=`<path>` || File containing gridded data ||
 || -TIMEUNIT=<hr|da|mo> || Time unit of gridded data ||
 || -OUTDIR=`<path>` || Directory to place output ||
-|| -GRID=a,b,c,d,e,f || Where a and b are longitude and latitude, c and d are cell width and height, e and f are number of columns and rows. ||
+|| -GRID=a,b,c,d,e,f || Where a and b are longitude and latitude of the lower left corner of the grid, c and d are cell width and height, e and f are number of columns and rows. ||
 
 _*Example*_
 GRIDDA.exe -EXTRACT -WEIGHTFILE=DelineateTest\Weights.csv -OUTDIR=ExtractTest\ -GRID=112.925,-43.575,0.05,0.05,813,670 -DATADIR=Data\ -TIMEUNIT=mo
