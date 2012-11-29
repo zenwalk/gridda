@@ -17,7 +17,7 @@ GRIDDA performs two key functions, shapefile delineation and gridded data extrac
 ALL mode requires the combined arguments of *-DELINEATE* and *-EXTRACT*, excluding *-WEIGHTFILE*.
 
 _*Example*_
-GRIDDA.exe -ALL -SHAPEFILE=orara_river.shp -OUTDIR=AllTest*\ -GRID=112.925,-43.575,0.05,0.05,813,670 -DATADIR=Data*\ -TIMEUNIT=mo
+GRIDDA.exe -ALL -SHAPEFILE=orara_river.shp -OUTDIR=AllTest`\` -GRID=112.925,-43.575,0.05,0.05,813,670 -DATADIR=Data`\` -TIMEUNIT=mo
 
 
 === DELINEATE ===
@@ -26,7 +26,7 @@ GRIDDA.exe -ALL -SHAPEFILE=orara_river.shp -OUTDIR=AllTest*\ -GRID=112.925,-43.5
 || -GRID=a,b,c,d,e,f || Where a and b are longitude and latitude of the lower left corner of the grid, c and d are cell width and height, e and f are number of columns and rows. ||
 
 _*Example*_
-GRIDDA.exe -DELINEATE -SHAPEFILE=orara_river.shp -OUTDIR=DelineateTest*\ -GRID=112.925,-43.575,0.05,0.05,813,670
+GRIDDA.exe -DELINEATE -SHAPEFILE=orara_river.shp -OUTDIR=DelineateTest`\` -GRID=112.925,-43.575,0.05,0.05,813,670
 
 
 === EXTRACT ===
@@ -37,7 +37,7 @@ GRIDDA.exe -DELINEATE -SHAPEFILE=orara_river.shp -OUTDIR=DelineateTest*\ -GRID=1
 || -GRID=a,b,c,d,e,f || Where a and b are longitude and latitude of the lower left corner of the grid, c and d are cell width and height, e and f are number of columns and rows. ||
 
 _*Example*_
-GRIDDA.exe -EXTRACT -WEIGHTFILE=DelineateTest\Weights.csv -OUTDIR=ExtractTest*\ -GRID=112.925,-43.575,0.05,0.05,813,670 -DATADIR=Data*\ -TIMEUNIT=mo
+GRIDDA.exe -EXTRACT -WEIGHTFILE=DelineateTest\Weights.csv -OUTDIR=ExtractTest`\` -GRID=112.925,-43.575,0.05,0.05,813,670 -DATADIR=Data`\` -TIMEUNIT=mo
 
 
 === Optional Arguments ===
