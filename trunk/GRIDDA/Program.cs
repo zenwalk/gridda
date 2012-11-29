@@ -272,7 +272,8 @@ namespace GRIDDA
             Console.WriteLine("DELINEATE");
             Console.WriteLine("-SHAPEFILE=<path>       Path to shapefile");
             Console.WriteLine("-OUTDIR=<path>          Directory to place output");
-            Console.WriteLine("-GRID=a,b,c,d,e,f       Where a and b are longitude and latitude,");
+            Console.WriteLine("-GRID=a,b,c,d,e,f       Where a and b are longitude and latitude");
+            Console.WriteLine("                        of the lower left hand corner of the grid,");
             Console.WriteLine("                        c and d are cell width and height,");
             Console.WriteLine("                        e and f are number of columns and rows.");
             Console.WriteLine("");
@@ -282,7 +283,8 @@ namespace GRIDDA
             Console.WriteLine("-DATADIR=<path>         File containing gridded data");
             Console.WriteLine("-TIMEUNIT=<hr|da|mo>    Time unit of gridded data");
             Console.WriteLine("-OUTDIR=<path>          Directory to place output");
-            Console.WriteLine("-GRID=a,b,c,d,e,f       Where a and b are longitude and latitude,");
+            Console.WriteLine("-GRID=a,b,c,d,e,f       Where a and b are longitude and latitude");
+            Console.WriteLine("                        of the lower left hand corner of the grid,");
             Console.WriteLine("                        c and d are cell width and height,");
             Console.WriteLine("                        e and f are number of columns and rows.");
             Console.WriteLine("");
