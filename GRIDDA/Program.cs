@@ -196,8 +196,8 @@ namespace GRIDDA
 
             if (tokens.Length == 6)
             {
-                decimal lat = decimal.Parse(tokens[0]);
-                decimal lon = decimal.Parse(tokens[1]);
+                decimal lat = decimal.Parse(tokens[1]);
+                decimal lon = decimal.Parse(tokens[0]);
                 decimal xRes = decimal.Parse(tokens[2]);
                 decimal yRes = decimal.Parse(tokens[3]);
                 int cols = int.Parse(tokens[4]);
