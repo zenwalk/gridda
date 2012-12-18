@@ -17,6 +17,7 @@ namespace GRIDDA
                 PrintHelpCommand();
                 Console.WriteLine("Press any key to continue.....");
                 Console.ReadKey();
+
                 return;
             }
             else

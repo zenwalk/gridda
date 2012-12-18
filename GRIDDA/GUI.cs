@@ -54,7 +54,7 @@ namespace GRIDDA
 
         private GriddedDataDetails getGridInfo()
         {
-            return new GriddedDataDetails((float)numericUpDown1.Value, (float)numericUpDown2.Value, (float)numericUpDown3.Value, (float)numericUpDown4.Value, (int)numericUpDown5.Value, (int)numericUpDown6.Value);
+            return new GriddedDataDetails((float)numericUpDown2.Value, (float)numericUpDown1.Value, (float)numericUpDown3.Value, (float)numericUpDown4.Value, (int)numericUpDown5.Value, (int)numericUpDown6.Value);
         }
 
         private void button4_Click(object sender, EventArgs e)
