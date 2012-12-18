@@ -207,7 +207,7 @@ namespace GRIDDA
             }
             else
             {
-                throw new Exception("Grid string incorrect format.\n\tRequired: lat,lon,xRes,yRes,cols,rows.\n\tExample: 111.975, -44.025, 0.05, 0.05, 861, 681");
+                throw new Exception("Grid string incorrect format.\n\tRequired: lon,lat,xRes,yRes,cols,rows.\n\tExample: 111.975, -44.025, 0.05, 0.05, 861, 681");
             }
         }
 
