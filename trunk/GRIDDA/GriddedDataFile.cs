@@ -317,17 +317,25 @@ namespace GRIDDA
 
             if (!textFormat)
             {
-                // Open
-                BinaryReader inFile = new BinaryReader(File.Open(fltFile, FileMode.Open, FileAccess.Read));
+                try
+                {
+                    // Open
+                    BinaryReader inFile = new BinaryReader(File.Open(fltFile, FileMode.Open, FileAccess.Read));
 
-                // Seek
-                inFile.BaseStream.Seek(sizeof(Single) * (row * nColumns + column), SeekOrigin.Begin);
+                    // Seek
+                    inFile.BaseStream.Seek(sizeof(Single) * (row * nColumns + column), SeekOrigin.Begin);
 
-                // Read
-                data = inFile.ReadSingle();
+                    // Read
+                    data = inFile.ReadSingle();
 
-                // Close
-                inFile.Close();
+                    // Close
+                    inFile.Close();
+                }
+                catch (EndOfStreamException e)
+                {
+                    Console.WriteLine("Exception occured while reading data file (" + fltFile + ").\n Possible error with grid parameters. Ensure -GRID option has correct values from header file.\n");
+                    throw e;
+                }
             }
             else
             {

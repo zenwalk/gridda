@@ -1325,11 +1325,23 @@ namespace GRIDDA
 
                         outData[i][2][j] = sortedData[j].getMin(-9999.9f);
                         outData[i][3][j] = sortedData[j].getMax();
+
+                        if (orderedPoints.Length > 0)
+                        {
                         outData[i][4][j] = orderedPoints[(int)(orderedPoints.Length * 0.1)];
                         outData[i][5][j] = orderedPoints[(int)(orderedPoints.Length * 0.25)];
                         outData[i][6][j] = orderedPoints[(int)(orderedPoints.Length * 0.5)];
                         outData[i][7][j] = orderedPoints[(int)(orderedPoints.Length * 0.75)];
                         outData[i][8][j] = orderedPoints[(int)(orderedPoints.Length * 0.9)];
+                        }
+                        else // do not calculate percentiles or quantiles if no data is available
+                        {
+                            outData[i][4][j] = -9999.9f;
+                            outData[i][5][j] = -9999.9f;
+                            outData[i][6][j] = -9999.9f;
+                            outData[i][7][j] = -9999.9f;
+                            outData[i][8][j] = -9999.9f;
+                        }
                     }
 
 
